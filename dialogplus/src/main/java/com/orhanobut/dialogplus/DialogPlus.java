@@ -255,9 +255,9 @@ public class DialogPlus {
   private View createView(LayoutInflater inflater, View headerView, View footerView, BaseAdapter adapter) {
     View view = holder.getView(inflater, rootView);
 
-    if (holder instanceof ViewHolder) {
-      assignClickListenerRecursively(view);
-    }
+//    if (holder instanceof ViewHolder) {
+//      assignClickListenerRecursively(view);
+//    }
 
     assignClickListenerRecursively(headerView);
     holder.addHeader(headerView);
